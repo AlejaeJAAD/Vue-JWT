@@ -28,7 +28,8 @@ const mutations = {
 const actions = {
   login(context, loginForm) {
     return new Promise((response, error) => {
-      Axios.post('http://localhost:3001/api/user/login', loginForm)
+      //Axios.post('http://localhost:3001/api/user/login', loginForm)
+      Axios.post('https://alejae-vue-jwt.herokuapp.com/api/user/login', loginForm)
         .then(res => {
           if (res.data.error) {
             error(res.data.error);

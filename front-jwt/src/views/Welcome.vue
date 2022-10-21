@@ -25,7 +25,8 @@
         async ruta(){
             if(this.token != null) {
                 try {
-                    const res = await fetch('http://localhost:3001/api/welcome', {
+                    //const res = await fetch('http://localhost:3001/api/welcome', {
+                    const res = await fetch('https://alejae-vue-jwt.herokuapp.com/api/welcome', {
                         headers: {
                         'Content-Type': 'application/json',
                         'auth-token': this.token
